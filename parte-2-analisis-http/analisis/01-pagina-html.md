@@ -8,7 +8,7 @@
 ## Headers de Request
 | Header | Valor |
 |--------|-------|
-| Host | [104.20.23.154:443] |
+| Host | [example.com] |
 | User-Agent | [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36] |
 | Accept | [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8] |
 
@@ -24,3 +24,5 @@
 | DNS Lookup | [24.09 ms] |
 | TTFB | [100.77 ms] |
 
+
+Conclusión general: este análisis, no corresponde realmente a la petición principal de example.com, sino a una petición secundaria hacia un recurso JavaScript alojado en la infraestructura de Cloudflare. El 304 y el bajo TTFB muestran un uso eficiente de caché con revalidación.
